@@ -8,8 +8,14 @@
 </head>
 <style>
     body{
-        width: 1800px;
+        width: 90%;
         height: 1500px;
+        background-color: rgb(187, 181, 181);
+        margin: 0px;;
+        margin-left: 50px;
+    }
+    .line{
+        height: 100px;
     }
     
     .prev, .next {
@@ -81,7 +87,7 @@
         height: 400px;
     }*/
     .image_container{
-        width: 800px;
+        width: 98%;
         height: 400px;
         float: left;
         padding: 5px;
@@ -89,10 +95,19 @@
         background-color: rgb(12, 12, 11);
         margin: 5px;
     }
+    .image_container img {
+        width: 100%;
+    }
     .slider_container{
-        width: 820px;
+        width: 60%;
         height: 420px;
-        background-color: rgb(184, 154, 20);  
+        background-color: rgb(184, 154, 20); 
+        float: left; 
+        margin-right: 20px;
+    }
+    .studio_pics{
+        float: right;
+        width: 35%;
     }
 
     .dotsss{
@@ -104,29 +119,57 @@
     }
     .std{
         position: absolute;
-        top: 40px;
+        top: 109px;
         font-weight: 700px;
         font-size: 20px;
         font: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    @media only screen and (max-width: 600px){
-        img {
-            width: 100px;
-            height: 100px;
+    
+    @media only screen and (max-width: 600px)
+    {
+        body{
+            width: 100%;
         }
+
+    .sp .studio_pics img{
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .image_container{
+            width: 100%;
+            height: 100%;
+        }
+        .slider_container{
+            width: 200%;
+            height: 20%; 
+              
+        }
+        .dotsss{
+            position: absolute;
+            top: 100px;
+        }
+        .studio_pics{
+            float: none;
+        }
+
 
     }
         
     
 </style>
 <body>
-    <div class="line" style="width: 1800 ; height: 20px; background-color: darkgrey;"></div>
+    <div class="line" ></div>
     
     <div class="slider_container">
        
     <div class="image_container fade">
-       <a  href="./east_legon/Studio_10.jpg" > <img  src="./east_legon/Studio_10.jpg" width="800" height="400" alt=""></a>
+       <a  href="./east_legon/Studio_10.jpg" > <img  src="./east_legon/Studio_10.jpg" width="890" height="400" alt=""></a>
        <div class="std">STUDIO</div>
        <!-- <img src="./east_legon/Studio_11.jpg" width="450" height="350" alt="">
         <img src="./east_legon/Studio_3.jpg" width="450" height="350" alt="">
@@ -140,13 +183,21 @@
     </div>
     <div class="image_container fade">
         <div class="std"">STUDIO</div>
-        <a  href="./east_legon/Studio_9.jpg" > <img  src="./east_legon/Studio_9.jpg" width="800" height="400" alt=""></a>
+        <a  href="./east_legon/Studio_9.jpg" > <img  src="./east_legon/Studio_9.jpg" width="800" height="400" alt=""  <div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div></a>
+        <div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
     </div>
+    <div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     </div>
 
- <div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
- </div>
+
   <!-- The dots/circles -->
 
 </div>
@@ -161,10 +212,10 @@
 
 
 
-<div class="studio_pics">
+<span class="sp"><div class="studio_pics">
     <img src="./east_legon/Studio_10.jpg" alt="" style="width: 100;" height="100">
     <img src="./east_legon/Studio_11.jpg" alt="" style="width: 100;" height="100">
-</div>
+</div></span>
 
 <script type="text/javascript" src="slide.js">
 
