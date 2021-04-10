@@ -25,6 +25,7 @@ body{
     background-color: rgba(103, 189, 189, 0.74);
     margin: 20px;
     
+    
 }
 #main {
     width: 100%;
@@ -65,8 +66,13 @@ h1 span {
 
     color: honeydew;
 }
-h2{
+ h2{
     text-align: center;
+    text-decoration: none;
+    color: white;
+}
+a {
+    text-decoration: none;
 }
 
 .gallery  .sect h2 {
@@ -84,16 +90,27 @@ h2{
     height: 50px;
     margin-left: 15px;
 }
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width:600px){
     body{
         background-color: rgb(239, 239, 247);
     }
-   .sect h2{
+   .sect a h2{
         font-size: 10px;
         text-align: center;
-        margin-right: 100px;
-    
+        margin-right: 50px;
+        text-decoration: none;
     }
+    
+    
     h1{
         font-size: 10px;
         text-align: center;
